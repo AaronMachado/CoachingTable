@@ -2,10 +2,10 @@
 General
 ***********************/
 *{ 
+    padding: 0px;
     margin: 0px;
     font-family: 'Lato';
-    padding: 0px;
-
+    
     /*color: #4D4D4D;*/
 }
 
@@ -26,63 +26,152 @@ Header
 ***********************/
 header {
 	/*Strictly Necessary */
+
 	width: 100%;	
 	height: 65px; /*Adjust the hight to your purposes*/
 
 	/*Aesthetics*/
 	background: #ffffff;
-	border-radius: 7px;
+	/*border-radius: 7px;*/
 	
 	/*new*/
 	color: #4D4D4D;/*Ready to be permanent*/
-	border-bottom: solid;
-	border-color: lightblue;
 	
+	
+	border-bottom: solid;
+	border-width: 2px;
+	border-color: #E1E1E1;
+
 }
 
-nav {
-	/*text-align: right;*/
+/*nav {
+	
 	font-size: 1em;
 	font-weight: bold;
 	border: dashed;
-}
+	background: red;
+	padding: 0px;
+	margin: 0px;
+}*/
 
-nav ul{
+ul{
 	list-style: none;
-	border: dotted;
-	border-color: red;
+	margin: 5px;
+	padding: 0px;
 }
 
-nav li{
-	border: solid;
-	color: #00af8d;
+
+
+li{
 	margin: 0px;
 	padding: 0px;
 	display: inline-block;
+	
 }
+
+.topBar{
+	
+
+	
+	/*font*/
+
+	/*position*/
+	
+	/*margin-top: 23px;*/
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.leftbox{
+	margin: 0px;
+	padding: 0px;
+
+	min-height: 40px;
+	margin-top:12px; 
+	margin-bottom:10px;
+  
+}
+
+.logo{
+	margin: 0px;
+	padding: 0px;
+
+	
+	width: 36px;
+	height: 40px;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+}
+
+
+.searchBox{
+	/*background: yellow;*/
+	/*margin-top:5px;
+	margin-bottom: 5px;*/
+	margin: 0px;
+	padding: 0px;
+	
+
+	min-height: 40px;
+	max-width: 420px;
+	background: #F2F2F2;
+	border-radius: 20px;
+
+	margin-left: 15px
+
+	
+}
+
+.adHocContainer{
+	
+	margin: 0px;
+	padding: 0px;
+	margin-top: 20px;
+	margin
+}
+
 
 
 .info{
-	text-align: right;
-	border: solid;
-	border-color: blue;
-	margin: 0px;
+	/*font*/
+	color: #999999;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.8px;
+
+	text-align: left;
 	padding: 0px;
+	margin: 0px;
+	margin-top: 2px;
+	padding-right: 20px;
+		
+}
+
+.info li{
+	margin-right: 18px;
 }
 
 .links{
+	
+
 	text-align: right;
-	border: solid;
-	border-color:yellow;
 	margin: 0px;
 	padding: 0px;
+	
+	/*font*/
+	color: #00af8d;	
+	font-size: 15px;
+	letter-spacing: 1.2px;
+	font-weight: 600;
 }
 
+.links li{
+	margin-left: 20px;
+}
 
-
-
-
-
+b{
+	color: #4D4D4D;
+}
 
 
 
