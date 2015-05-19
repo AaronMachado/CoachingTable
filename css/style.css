@@ -15,7 +15,7 @@ General
 	float: right;
 
 	/*Aesthetics*/
-	background: black;	
+	/*background: black;*/	
 }
 /********************/
 
@@ -32,27 +32,20 @@ header {
 
 	/*Aesthetics*/
 	background: #ffffff;
-	/*border-radius: 7px;*/
 	
 	/*new*/
 	color: #4D4D4D;/*Ready to be permanent*/
 	
-	
+	/*Border*/
 	border-bottom: solid;
 	border-width: 2px;
 	border-color: #E1E1E1;
 
+	/*Good test shit (remember? the cool stuff to post on overtackflow)*/
+	/*border-top: solid blue 15px;*/
+	
 }
 
-/*nav {
-	
-	font-size: 1em;
-	font-weight: bold;
-	border: dashed;
-	background: red;
-	padding: 0px;
-	margin: 0px;
-}*/
 
 ul{
 	list-style: none;
@@ -71,13 +64,9 @@ li{
 
 .topBar{
 	
-
+	/*Good test shit (remember? the cool stuff to post on overtackflow)*/
+	/*margin-top:-15px;*/
 	
-	/*font*/
-
-	/*position*/
-	
-	/*margin-top: 23px;*/
 	padding-right: 60px;
 	padding-left: 60px;
 }
@@ -85,10 +74,15 @@ li{
 .leftbox{
 	margin: 0px;
 	padding: 0px;
-
+	
 	min-height: 40px;
+	
+	/*Margins*/
 	margin-top:12px; 
 	margin-bottom:10px;
+	/*******/
+
+	/*background: lightpink;*/
   
 }
 
@@ -105,29 +99,43 @@ li{
 
 
 .searchBox{
-	/*background: yellow;*/
-	/*margin-top:5px;
-	margin-bottom: 5px;*/
-	margin: 0px;
-	padding: 0px;
-	
-
-	min-height: 40px;
+	/*Size*/
+	min-height:40px;
 	max-width: 420px;
+
+	/*Margins */
+	margin-left: 15px;
+	padding-left:50px;
+
 	background: #F2F2F2;
+
 	border-radius: 20px;
+	border:none;
 
-	margin-left: 15px
+	font-size: 18px;
 
+	/*Taking out the anoying highlight*/
+	outline-width: 0;
 	
 }
 
+
+.magnifierLogo{
+
+	color:#C0C0C0;
+	font-size: 18px;
+	position: absolute;
+  	left: 70px;
+  	top: 8px;
+}
+
 .adHocContainer{
-	
+
 	margin: 0px;
 	padding: 0px;
 	margin-top: 20px;
-	margin
+
+	/*background: green;*/
 }
 
 
@@ -138,12 +146,14 @@ li{
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 0.8px;
-
+	
 	text-align: left;
 	padding: 0px;
 	margin: 0px;
 	margin-top: 2px;
 	padding-right: 20px;
+
+	/*background: yellow;*/
 		
 }
 
@@ -153,7 +163,6 @@ li{
 
 .links{
 	
-
 	text-align: right;
 	margin: 0px;
 	padding: 0px;
@@ -163,6 +172,20 @@ li{
 	font-size: 15px;
 	letter-spacing: 1.2px;
 	font-weight: 600;
+
+	/*background: red;*/
+
+}
+
+a {
+	color: #00af8d;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #C84B80;
+	/*color: #006954;*/
 }
 
 .links li{
@@ -172,6 +195,16 @@ li{
 b{
 	color: #4D4D4D;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,8 +237,8 @@ Content
 } 
 
 main, section, footer {
-	 background: lightgray; 
-	 border-radius: 7px; 
+	 
+	 /*border-radius: 7px; */
 	
 }
 
@@ -263,56 +296,184 @@ Content
 ***********************/
 
 section {
+	border-top: solid #00af8d 50px;
 	order: 2;
 	flex: 0 1 100%;
 	/*height: 400px;*/
 }
 
-footer {
-	order: 3;
-	flex: 0 1 100%;
-	height: 100px;
-}
 
 
-/**Table Styles */
+
+
+
+
+
+
+
+
+/*************
+Table Styles 
+**************/
 
 table {
-  border-spacing: 0px;
-  width: 100%;
-  border-collapse: collapse; 
+
+
+
+	margin-top: -48px;
+
+	width: 92%;
+	margin-left: 60px;
+	padding-right: 60px;
+
+
+	
+	border-spacing: 0px;
+	border-collapse: collapse; 
+
+
   /*padding: 10px;*/
   /*padding: 5px;*/
 }
 
-thead {
-  border-spacing: 0px;
-  padding: 40px;
+tr {	
+	border-bottom: 1pt solid lightgray;
+	padding: 0px;
+	margin: 0px;
 }
 
-thead th{
-  font-weight: 400;
-  background: #00af8d;
-  color: #FFF;
-  margin-left: 40px;
+/*Taking the border of the header out*/
+tr:first-child{
+	border: none;
+}
+/**************************************/
+
+/*************
+Table Header
+**************/
+th {
+
+	/*border: solid lightgray;*/
+	color: #fff;
+	font-size: 15px;
+	text-align: left;
+	font-weight: 600;
+
+	padding-right: 10px;
+
+	padding-top: 12px;
+	padding-bottom: 12px;
+	/*padding: 15px;*/
+	/*height: 18px;*/
 }
 
-tr {
-  background: white;
-  /*outline: thin solid black;*/
-  border-bottom: 1pt solid lightgray;
+
+td{
+
+	font-weight: 600;
+	font-size: 12px;
+	color:#4D4D4D;
+
+	text-align: left;
+	
+	padding-right: 10px;
+
+	padding-top: 12px;
+	padding-bottom: 12px;	
 }
 
-th, td {
-  text-align: left;
-  font-weight: 300;
-  padding: 15px;
-  /*height: 18px;*/
+/*****************************
+1st Column -> # column
+*****************************/
+td:first-child{
+	color: #A1A1A1;
+	font-weight: 400;
+}
+/*****************************
+3rd Column -> Name column
+*****************************/
+th:first-child + th + th {
+	padding-left: 20px;
 }
 
-tbody {
-  color: black;
-  border: dotted;
-  border-color: red;
-  max-width: 70%;
+td:first-child + td + td{
+	font-size: 15px;
+	font-weight: 600;
+	padding-left: 20px;
 }
+
+/*****************************
+7th Column -> Time column
+******************************/
+td:first-child + td + td + td + td + td + td{
+	width:100px;
+	padding-right: 40px;
+}
+
+/*****************************
+8th Column -> Called? Column
+******************************/
+th:first-child + th + th + th + th + th + th + th{
+	margin-left: 30px;
+}
+
+td:first-child + td + td + td + td + td + td + td{
+	margin-left: 30px;
+
+}
+/*******************************/
+
+
+
+/*Making the circles bigger*/
+td:first-child + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td{
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td {
+	font-size: 18px;
+	color: #F2F2F2;
+}
+
+
