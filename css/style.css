@@ -28,7 +28,7 @@ header {
 	/*Strictly Necessary */
 
 	width: 100%;	
-	height: 65px; /*Adjust the hight to your purposes*/
+	min-height: 65px; /*Adjust the hight to your purposes*/
 
 	/*Aesthetics*/
 	background: #ffffff;
@@ -97,14 +97,29 @@ li{
 	background-repeat: no-repeat;
 }
 
+.magnifierLogo{
+
+	color:#C0C0C0;
+	font-size: 18px;
+	position: absolute;
+  	left: 70px;
+  	top: 8px;
+}
+
 
 .searchBox{
 	/*Size*/
 	min-height:40px;
-	max-width: 420px;
+	/*max-width: 420px;*/
+
+	width: 80%;
+
+	position: absolute;
+	top:0px;
+	left:50px;
 
 	/*Margins */
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 	padding-left:50px;
 
 	background: #F2F2F2;
@@ -120,14 +135,7 @@ li{
 }
 
 
-.magnifierLogo{
 
-	color:#C0C0C0;
-	font-size: 18px;
-	position: absolute;
-  	left: 70px;
-  	top: 8px;
-}
 
 .adHocContainer{
 
@@ -289,6 +297,7 @@ p{
 	.Description {  /*first section on the contact page. Para efectos practicas es el primer parrrafo*/
 		width: 55%;
 		float: left;
+	}
 }
 
 /**********************
